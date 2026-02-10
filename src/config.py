@@ -21,10 +21,11 @@ class Settings:  #Creates container for Settings.
 
         # Determines if debug mode is on. 
         debug_raw = (os.getenv("DEBUG") or "false").strip().upper()
-        debug = debug_raw in {"1", "true", "yes" , "y"}
-
-        return Settings (
+        debug = debug_raw in {"1", "true", "yes" , "y"}     #Allowlist. True if debug mode is on.
+  
+        return Settings ( 
             llm_provider=provider,
             debug=debug
         )
+    
     

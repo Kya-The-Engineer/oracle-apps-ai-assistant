@@ -12,6 +12,6 @@ from prompts import (
 
 def main() -> None:
 
-    settings = get_settings()
-    client = get_llm_client(settings.llm_provider)
+    settings = get_settings()  #Grabbing get_settings function from config.py and labeling it settings.
+    client = get_llm_client(settings.llm_provider) #Grabbing get_llm_client function from llm.py and labeling it client.
 

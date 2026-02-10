@@ -21,18 +21,7 @@ class LLMClient(Protocol):
             """
             def generate(self, system: str, user: str) -> LLMResponse:
                 text = (
-                    "1) Summary\n"
-                    "This is a stubbed response used to test the assistant workflow.\n\n"
-                    "2) Likely Causes\n"
-                    "- Missing configuration\n"
-                    "- Incomplete context\n\n"
-                    "3) Troubleshooting Steps\n"
-                    "1. Confirm the affect module and process.\n"
-                    "2. Capture the exact error message.\n"
-                    "3. Attempt to reproduce the issue.\n\n"
-                    "4) What I Need From You\n"
-                    "- Module name\n"
-                    "- Error text or screenshot\n"
+                 
                 )
                 return LLMResponse(text=text, provider = "STUB")
             
@@ -42,6 +31,7 @@ class LLMClient(Protocol):
                 """
                 provider = provider.strip().upper()
 
+                #Chooses the correct client based on the provider. Gives it to main.py.
                 if provider == "STUB":
                     return StubClient()
                 
