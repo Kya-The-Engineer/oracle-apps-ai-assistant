@@ -1,20 +1,20 @@
-from dataclasses import dataclass
-from typing import Protocol
+from dataclasses import dataclass #creates containers for data
+from typing import Protocol 
 
 @dataclass(frozen=True)
 class LLMResponse:
     text: str
     provider : str
 
-class LLMClient(Protocol):
+class LLMClient(Protocol): # 
     """
     Interface that all LLM clients must follow.
     """
-    def generate(self, system: str, user: str) -> LLMResponse:
-        ...
+    def generate(self, system: str, user: str) -> LLMResponse: #One consistent method no matter the backend.
+        ... #Placeholder
 
 
-        class StubClient:
+    class StubClient:
             """
             Fake LLM client used for development and testing.
             Returns a predictable response so we can validate workflow without calling a real API.
@@ -25,7 +25,7 @@ class LLMClient(Protocol):
                 )
                 return LLMResponse(text=text, provider = "STUB")
             
-            def get_llm_client(provider: str) -> LLMClient:
+    def get_llm_client(provider: str) -> LLMClient:
                 """
                 Factory function that returns the correct LLM client based on the configured provider.
                 """
