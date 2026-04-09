@@ -6,7 +6,11 @@ class Prompt:
     template: str
 
 # Sets prompt for support requests.
-    SUPPORT_PROMPT = Prompt( 
+    SUPPORT_PROMPT = Prompt(
+        system=(
+            "You are an Oracle Apps Support Assistant.",
+            "You help users troubleshoot issues with Oracle Applications.",
+            "Be clear, professional, and give step by step instructions in your responses.",)
 
     )   
     
@@ -16,8 +20,11 @@ class Prompt:
             "You are an Oracle Apps Communication Assistant",
              ),
         template=(
-        
+            "The user has the following support question: \n\n\""
+            "{question}\n\n\""
+            "Please provide a helpful and accurate response."
         ),
+
 
     )
 

@@ -14,13 +14,15 @@ class LLMClient(Protocol): #
         ... #Placeholder
 
 
-    class StubClient:
+class StubClient:
             """
             Fake LLM client used for development and testing.
             Returns a predictable response so we can validate workflow without calling a real API.
             """
             def generate(self, system: str, user: str) -> LLMResponse:
                 text = (
+                      "This is a stub response."
+                      "The real LL"
                  
                 )
                 return LLMResponse(text=text, provider = "STUB")
