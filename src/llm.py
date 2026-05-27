@@ -45,6 +45,7 @@ class OCIClient:
                 chat_request=oci.generative_ai_inference.models.CohereChatRequest(
                     message=user,
                     preamble_override=system,
+                    max_tokens=500,
                 )
             )
         )

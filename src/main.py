@@ -61,7 +61,8 @@ def main() -> None:
         response = client.generate(system=system, user=user)
 
         # Display the response
-        print(f"\nAssistant: {response.text}")
+        print(f"\nAssistant:")
+        print(response.text)
         print(f"(Powered by: {response.provider})")
         print("-" * 50)
 
