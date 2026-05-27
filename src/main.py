@@ -1,4 +1,4 @@
-# Importing functions from other files.
+# Importing functions from the other files.
 from config import get_settings
 from llm import get_llm_client
 from prompts import (
