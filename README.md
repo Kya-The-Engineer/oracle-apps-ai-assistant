@@ -14,7 +14,7 @@ This AI Assistant gives users access to two modes.
 ## *Skills*
 - **Prompt Engineering:** designed prompts and message templates for 2 separate use cases.
 - **Cloud API Intergration:** connected a Python application to a live Oracle GenAI service.
-- **Modular Architecture:** separated concerns across 4 focused files. Helped grately with organization.
+- **Modular Architecture:** separated concerns across 4 focused files. Helped greatly with organization.
 - **Secure Configuration Management:** used environment variables to hold my OCI credentials and to keep from hardcoding sensitive data.
 - **Python OOP:** implemented Protocol interfaces, dataclasses, and factory functions.
 - **Error Handling:** defensive programming with input validation (allowlist) and descriptive error messages.
@@ -31,6 +31,7 @@ Type 'comms: your request' for communication help.
 Type 'quit' to exit.
 ----------------------------------------------------
 You: support: How do I change my password in Oracle?
+
 Assistant: 
 Here are the general steps to change your password in Oracle Applications:
 
@@ -45,4 +46,4 @@ Here are the general steps to change your password in Oracle Applications:
 - Oracle Cloud Infrastructure GenAI Professional
 - Oracle Cloud Infrastructure Foundations
 
-I built this project to showcase practical skills in prompt engineering,  cloud API integration, and Python application development using OCI. The goal was to solve a realuse case by helping others navigate Oracle applications through a conversational AI interface.
+I built this project to showcase practical skills in prompt engineering,  cloud API integration, and Python application development using OCI. The goal was to solve a real use case by helping others navigate Oracle applications through a conversational AI interface.
