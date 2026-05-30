@@ -1,10 +1,10 @@
 # oracle-apps-ai-assistant
-**This hybrid AI Assistant was designed for support and communication related to OCI applications.**
+**This hybrid AI Assistant was designed for support and communications related to OCI applications.**
 
 ## *What It Does*
 This AI Assistant gives users access to two modes.
--**Support Mode** : Using then prefix "support:", ask questions about Oracle apps and get clear, step-by-step troubleshooting guidance.
--**Comms Mode** : Using the prefix "comms:", describe what you need to communicate and recieve a professionally drafted response.
+- **Support Mode** : Using then prefix "support:", ask questions about Oracle apps and get clear, step-by-step troubleshooting guidance.
+- **Comms Mode** : Using the prefix "comms:", describe what you need to communicate and recieve a professionally drafted response.
 
 ## *Built Using*
 - **OCI GenAI:** Cohere Command R Plus model
