@@ -22,14 +22,15 @@ This AI Assistant gives users access to two modes.
 ## *How To Run It*
 - Python 3.9+
 - Run python src/main.py
-- 
+
 ## *Example*
 
-## **Welcome to Oracle AI App Assistant!
+Welcome to Oracle AI App Assistant!
 Type 'support: your question' for support help.
 Type 'comms: your request' for communication help.
-Type 'quit' to exit.**
-----------------------------------------------------
+Type 'quit' to exit
+
+
 You: support: How do I change my password in Oracle?
 
 Assistant: 
