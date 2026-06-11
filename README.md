@@ -21,6 +21,9 @@ This AI Assistant gives users access to two modes.
 
 ## *How To Run It*
 - Python 3.9+
+- OCI account and credentials
+- .env with OCI values
+- pip install -r requirements.txt
 - Run python src/main.py
 
 ## *Example*
