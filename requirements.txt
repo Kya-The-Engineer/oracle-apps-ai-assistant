@@ -1,1 +1,2 @@
-requirements.txt
+oci
+python-dotenv
